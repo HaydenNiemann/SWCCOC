@@ -1,0 +1,300 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Layout */
+  html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #001d4a !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.75rem;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f9c74f !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    background: url('../images/home_background.png') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  
+  /* Welcome Section */
+  .welcome-section .card {
+    border: none;
+    border-radius: 12px;
+    overflow-wrap: break-word;
+  }
+  
+  .welcome-card {
+    background: url('../images/chicago_outline.jpg') center center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #003366;
+  }
+  
+  /* Verse Section */
+  .verse-section .card {
+    border: none;
+    border-radius: 12px;
+    color: #003366;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .custom-footer {
+    background-color: #001d4a; /* or whatever color you want */
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center; /* center vertically */
+    justify-content: center; /* center horizontally */
+    min-height: 40px; /* give it some decent height */
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    padding: 0 20px; /* remove bottom padding, add side padding */
+  }
+  
+  
+  
+  /* Buttons */
+  .btn-outline-light {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #003366;
+  }
+  
+  @media (max-width: 768px) {
+    /* Center the brand on mobile */
+    .navbar-brand {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    /* Full width dropdown background */
+    .navbar-collapse {
+      width: 100%;
+    }
+  
+    /* Stack links vertically, left aligned */
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 1rem;
+    }
+  
+    /* Make each link full width and left aligned */
+    .nav-link {
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 0;
+    }
+  
+    /* Hamburger stays on the right */
+    .navbar-toggler {
+      margin-left: auto;
+    }
+  
+    /* Hero adjustments */
+    .hero {
+      padding: 20px 15px;
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+  
+    .btn-lg {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Super small screens like old iPhones */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
+
+  /* NAVBAR */
+.navbar {
+    background-color: #001d4a !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .navbar-logo {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    display: inline-block;
+  }
+  
+  /* BRAND */
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* TOGGLER */
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.75rem;
+    margin-left: auto;
+  }
+  
+  /* NAV LINKS */
+  .navbar-nav {
+    flex-wrap: nowrap;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+    color: white !important;
+  }
+  
+  .nav-link:hover {
+    color: #f9c74f !important;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+  
+    .navbar-logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 1rem;
+    }
+  
+    .nav-link {
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 0;
+    }
+  
+    .navbar-collapse {
+      width: 100%;
+    }
+  }
+  
